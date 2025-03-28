@@ -34,4 +34,45 @@ document.addEventListener('DOMContentLoaded', function() {
             el.classList.add('animated');
         });
     }, 300);
+
+    // Funcionalidade de alternância de idioma
+    const langButtons = document.querySelectorAll('.lang-btn');
+    
+    // Função para atualizar o idioma na página
+    function updateLanguage(lang) {
+        document.documentElement.lang = lang === 'pt' ? 'pt-br' : 'en';
+        
+        // Atualizar todos os elementos com atributos data-pt e data-en
+        document.querySelectorAll('[data-pt], [data-en]').forEach(element => {
+            if (element.hasAttribute('data-' + lang)) {
+                element.textContent = element.getAttribute('data-' + lang);
+            }
+        });
+    }
+    
+    // Adicionar evento de clique aos botões de idioma
+    langButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            
+            // Remover classe 'active' de todos os botões
+            langButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Adicionar classe 'active' ao botão clicado
+            this.classList.add('active');
+            
+            // Atualizar o idioma
+            updateLanguage(lang);
+            
+            // Salvar a preferência de idioma no localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        });
+    });
+    
+    // Verificar se há uma preferência de idioma salva
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        // Ativar o botão do idioma salvo
+        document.querySelector('.lang-btn[data-lang="' + savedLanguage + '"]').click();
+    }
 });

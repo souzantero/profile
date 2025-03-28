@@ -10,13 +10,17 @@
 <body>
     <header class="header">
         <div class="container">
+            <div class="language-toggle">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
             <div class="profile-card">
                 <div class="profile-img">
                     <img src="avatar.jpg" alt="Felipe Antero">
                 </div>
                 <div class="profile-info">
                     <h1>Felipe Antero</h1>
-                    <p class="tagline">Software Engineer | Pós-graduado em Arquitetura de Software</p>
+                    <p class="tagline" data-pt="Software Engineer | Pós-graduado em Arquitetura de Software" data-en="Software Engineer | Postgraduate in Software Architecture">Software Engineer | Pós-graduado em Arquitetura de Software</p>
                     <div class="social-links">
                         <a href="https://api.whatsapp.com/send?phone=5541989015115" target="_blank" class="social-icon whatsapp">
                             <i class="fab fa-whatsapp"></i>
@@ -36,27 +40,27 @@
     <main>
         <section class="about section">
             <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
+                <h2 class="section-title" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
                 <div class="content">
-                    <p>Olá, meu nome é Felipe Antero, tenho 31 anos e sou engenheiro de software com mais de 12 anos de experiência na área de Tecnologia da Informação. Minha paixão pela tecnologia começou na adolescência, ajudando meu pai em sua empresa com tarefas de informática como formatação de computadores e configuração de impressoras.</p>
-                    <p>Ao longo da minha carreira, trabalhei como desenvolvedor web em várias empresas até que uma oportunidade no programa de formação da Apple para desenvolvimento iOS abriu as portas para o desenvolvimento mobile. Durante esse período, também adquiri experiência com desenvolvimento Android.</p>
-                    <p>Com interesse crescente em backend e infraestrutura, aceitei o convite de um parceiro, então CTO de uma empresa, para me tornar desenvolvedor backend. Nessa posição, desenvolvi habilidades em desenvolvimento em nuvem, CI/CD, testes automatizados, padrões e arquiteturas de software, conteinerização, orquestração, escalabilidade, entrega de conteúdo, monitoramento, observabilidade, construção de microsserviços e integração de sistemas.</p>
-                    <p>Buscando aprimorar ainda mais minhas habilidades, atualmente estou cursando pós-graduação em Arquitetura de Software. Este curso enriqueceu minha visão estratégica e técnica, preparando-me para enfrentar desafios complexos na construção e otimização de sistemas.</p>
+                    <p data-pt="Olá, meu nome é Felipe Antero e sou engenheiro de software com mais de 14 anos de experiência na área de Tecnologia da Informação. Minha paixão pela tecnologia começou na adolescência, ajudando meu pai em sua empresa com tarefas de informática como formatação de computadores e configuração de impressoras." data-en="Hello, my name is Felipe Antero and I have been a software engineer with over 12 years of experience in the Information Technology field. My passion for technology began in my teenage years, helping my father in his company with computing tasks such as formatting computers and setting up printers.">Olá, meu nome é Felipe Antero e sou engenheiro de software com mais de 12 anos de experiência na área de Tecnologia da Informação. Minha paixão pela tecnologia começou na adolescência, ajudando meu pai em sua empresa com tarefas de informática como formatação de computadores e configuração de impressoras.</p>
+                    <p data-pt="Ao longo da minha carreira, trabalhei como desenvolvedor web em várias empresas até que uma oportunidade no programa de formação da Apple para desenvolvimento iOS abriu as portas para o desenvolvimento mobile. Durante esse período, também adquiri experiência com desenvolvimento Android." data-en="Throughout my career, I have worked as a web developer at various companies until an opportunity in Apple's training program for iOS development opened the doors to mobile development for me. During this period, I also gained experience with Android development.">Ao longo da minha carreira, trabalhei como desenvolvedor web em várias empresas até que uma oportunidade no programa de formação da Apple para desenvolvimento iOS abriu as portas para o desenvolvimento mobile. Durante esse período, também adquiri experiência com desenvolvimento Android.</p>
+                    <p data-pt="Com interesse crescente em backend e infraestrutura, aceitei o convite de um parceiro, então CTO de uma empresa, para me tornar desenvolvedor backend. Nessa posição, desenvolvi habilidades em desenvolvimento em nuvem, CI/CD, testes automatizados, padrões e arquiteturas de software, conteinerização, orquestração, escalabilidade, entrega de conteúdo, monitoramento, observabilidade, construção de microsserviços e integração de sistemas." data-en="With a growing interest in backend and infrastructure, I accepted an invitation from a partner, then CTO of a company, to become a backend developer. In this position, I developed skills in cloud development, CI/CD, automated testing, software patterns and architectures, containerization, orchestration, scalability, content delivery, monitoring, observability, building microservices, and system integration.">Com interesse crescente em backend e infraestrutura, aceitei o convite de um parceiro, então CTO de uma empresa, para me tornar desenvolvedor backend. Nessa posição, desenvolvi habilidades em desenvolvimento em nuvem, CI/CD, testes automatizados, padrões e arquiteturas de software, conteinerização, orquestração, escalabilidade, entrega de conteúdo, monitoramento, observabilidade, construção de microsserviços e integração de sistemas.</p>
+                    <p data-pt="Buscando aprimorar ainda mais minhas habilidades, atualmente estou cursando pós-graduação em Arquitetura de Software. Este curso enriqueceu minha visão estratégica e técnica, preparando-me para enfrentar desafios complexos na construção e otimização de sistemas." data-en="Seeking to further enhance my skills, I am currently pursuing a postgraduate degree in Software Architecture. This course has enriched my strategic and technical vision, preparing me to tackle complex challenges in building and optimizing systems.">Buscando aprimorar ainda mais minhas habilidades, atualmente estou cursando pós-graduação em Arquitetura de Software. Este curso enriqueceu minha visão estratégica e técnica, preparando-me para enfrentar desafios complexos na construção e otimização de sistemas.</p>
                 </div>
             </div>
         </section>
 
         <section class="experience section">
             <div class="container">
-                <h2 class="section-title">Experiência Profissional</h2>
+                <h2 class="section-title" data-pt="Experiência Profissional" data-en="Professional Experience">Experiência Profissional</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Software Engineer</h3>
                             <h4>Impulso</h4>
-                            <p class="timeline-date">Dezembro de 2021 - Presente</p>
-                            <p class="description">Como Engenheiro de Software Sênior, minha principal responsabilidade envolve liderar e auxiliar o time de desenvolvimento na criação de soluções tecnológicas e melhorias propostas pelo time de produto. Isso inclui buscar a melhor arquitetura e design de sistemas, garantindo qualidade, integridade e entrega de projetos dentro dos prazos estabelecidos. Uma parte significativa do meu papel é revisar alterações de código, fornecer feedback técnico construtivo e apoiar desenvolvedores menos experientes, promovendo um ambiente de aprendizado contínuo.</p>
+                            <p class="timeline-date" data-pt="Dezembro de 2021 - Presente" data-en="December 2021 - Present">Dezembro de 2021 - Presente</p>
+                            <p class="description" data-pt="Como Engenheiro de Software Sênior, minha principal responsabilidade envolve liderar e auxiliar o time de desenvolvimento na criação de soluções tecnológicas e melhorias propostas pelo time de produto. Isso inclui buscar a melhor arquitetura e design de sistemas, garantindo qualidade, integridade e entrega de projetos dentro dos prazos estabelecidos. Uma parte significativa do meu papel é revisar alterações de código, fornecer feedback técnico construtivo e apoiar desenvolvedores menos experientes, promovendo um ambiente de aprendizado contínuo." data-en="As a Senior Software Engineer, my main responsibility involves leading and assisting the development team in creating technological solutions and improvements proposed by the product team. This includes seeking the best architecture and system design, ensuring quality, integrity, and project delivery within established deadlines. A significant part of my role is to review code changes, provide constructive technical feedback, and support less experienced developers, promoting an environment of continuous learning.">Como Engenheiro de Software Sênior, minha principal responsabilidade envolve liderar e auxiliar o time de desenvolvimento na criação de soluções tecnológicas e melhorias propostas pelo time de produto. Isso inclui buscar a melhor arquitetura e design de sistemas, garantindo qualidade, integridade e entrega de projetos dentro dos prazos estabelecidos. Uma parte significativa do meu papel é revisar alterações de código, fornecer feedback técnico construtivo e apoiar desenvolvedores menos experientes, promovendo um ambiente de aprendizado contínuo.</p>
                         </div>
                     </div>
                     
@@ -65,8 +69,8 @@
                         <div class="timeline-content">
                             <h3>Software Engineer</h3>
                             <h4>Opala Studios</h4>
-                            <p class="timeline-date">Junho de 2018 - Dezembro de 2021</p>
-                            <p class="description">Como Engenheiro de Software de nível médio, liderei a qualidade e automação de APIs existentes introduzindo testes automatizados (sistema, integração e unitários) usando Mocha/Chai em um ecossistema Node.js. Implementei Docker para otimizar a entrega de aplicativos, reduzindo significativamente o tempo de implantação e promovendo infraestrutura como código. Fui responsável pela adoção de serviços em nuvem (GCP e AWS), orquestrando migrações para o Google Kubernetes Engine (GKE) e Cloud Run.</p>
+                            <p class="timeline-date" data-pt="Junho de 2018 - Dezembro de 2021" data-en="June 2018 - December 2021">Junho de 2018 - Dezembro de 2021</p>
+                            <p class="description" data-pt="Como Engenheiro de Software de nível médio, liderei a qualidade e automação de APIs existentes introduzindo testes automatizados (sistema, integração e unitários) usando Mocha/Chai em um ecossistema Node.js. Implementei Docker para otimizar a entrega de aplicativos, reduzindo significativamente o tempo de implantação e promovendo infraestrutura como código. Fui responsável pela adoção de serviços em nuvem (GCP e AWS), orquestrando migrações para o Google Kubernetes Engine (GKE) e Cloud Run." data-en="As a Mid-Level Software Engineer, I led the quality and automation of existing APIs by introducing automated tests (system, integration, and unit) using Mocha/Chai within a Node.js ecosystem. I implemented Docker to optimize application delivery, significantly reducing deployment time and promoting infrastructure as code. I was responsible for adopting cloud services (GCP and AWS), orchestrating migrations to Google Kubernetes Engine (GKE) and Cloud Run.">Como Engenheiro de Software de nível médio, liderei a qualidade e automação de APIs existentes introduzindo testes automatizados (sistema, integração e unitários) usando Mocha/Chai em um ecossistema Node.js. Implementei Docker para otimizar a entrega de aplicativos, reduzindo significativamente o tempo de implantação e promovendo infraestrutura como código. Fui responsável pela adoção de serviços em nuvem (GCP e AWS), orquestrando migrações para o Google Kubernetes Engine (GKE) e Cloud Run.</p>
                         </div>
                     </div>
                     
@@ -75,8 +79,8 @@
                         <div class="timeline-content">
                             <h3>Mobile Engineer</h3>
                             <h4>PlugApps</h4>
-                            <p class="timeline-date">Janeiro de 2016 - Outubro de 2017</p>
-                            <p class="description">Como Engenheiro Mobile, meu projeto de destaque foi o desenvolvimento do zero de um aplicativo Android voltado para o segmento empresarial, semelhante ao WhatsApp Business. Inicialmente desenvolvido em Java, liderou a transição para Kotlin, adotando a arquitetura MVVM e programação reativa para otimizar a sincronização de dados locais com o servidor. O aplicativo, construído com tecnologia WebRTC para chamadas peer-to-peer, oferece funcionalidades avançadas, incluindo chat de texto, envio de anexos (imagens, vídeos, arquivos), gravação de áudio e chamadas de vídeo/voz.</p>
+                            <p class="timeline-date" data-pt="Janeiro de 2016 - Outubro de 2017" data-en="January 2016 - October 2017">Janeiro de 2016 - Outubro de 2017</p>
+                            <p class="description" data-pt="Como Engenheiro Mobile, meu projeto de destaque foi o desenvolvimento do zero de um aplicativo Android voltado para o segmento empresarial, semelhante ao WhatsApp Business. Inicialmente desenvolvido em Java, liderou a transição para Kotlin, adotando a arquitetura MVVM e programação reativa para otimizar a sincronização de dados locais com o servidor. O aplicativo, construído com tecnologia WebRTC para chamadas peer-to-peer, oferece funcionalidades avançadas, incluindo chat de texto, envio de anexos (imagens, vídeos, arquivos), gravação de áudio e chamadas de vídeo/voz." data-en="As a Mobile Engineer, my standout project was the development from scratch of an Android application aimed at the business segment, similar to WhatsApp Business. Initially developed in Java, I led the transition to Kotlin, adopting the MVVM architecture and reactive programming to optimize the synchronization of local data with the server. The application, built with WebRTC technology for peer-to-peer calls, offers advanced functionalities, including text chat, attachment sending (images, videos, files), audio recording, and video/voice calls.">Como Engenheiro Mobile, meu projeto de destaque foi o desenvolvimento do zero de um aplicativo Android voltado para o segmento empresarial, semelhante ao WhatsApp Business. Inicialmente desenvolvido em Java, liderou a transição para Kotlin, adotando a arquitetura MVVM e programação reativa para otimizar a sincronização de dados locais com o servidor. O aplicativo, construído com tecnologia WebRTC para chamadas peer-to-peer, oferece funcionalidades avançadas, incluindo chat de texto, envio de anexos (imagens, vídeos, arquivos), gravação de áudio e chamadas de vídeo/voz.</p>
                         </div>
                     </div>
                     
@@ -85,8 +89,8 @@
                         <div class="timeline-content">
                             <h3>Web Developer</h3>
                             <h4>BRQ</h4>
-                            <p class="timeline-date">Setembro de 2014 - Março de 2015</p>
-                            <p class="description">Em uma grande consultoria com foco em sistemas bancários, contribuí para a migração de um sistema legado para uma versão web, utilizando HTML, CSS, JavaScript e C#.NET. Essa experiência me apresentou ao rigoroso setor bancário e destacou a importância de sistemas seguros e eficientes.</p>
+                            <p class="timeline-date" data-pt="Setembro de 2014 - Março de 2015" data-en="September 2014 - March 2015">Setembro de 2014 - Março de 2015</p>
+                            <p class="description" data-pt="Em uma grande consultoria com foco em sistemas bancários, contribuí para a migração de um sistema legado para uma versão web, utilizando HTML, CSS, JavaScript e C#.NET. Essa experiência me apresentou ao rigoroso setor bancário e destacou a importância de sistemas seguros e eficientes." data-en="At a major consultancy focusing on banking systems, I contributed to the migration of a legacy system to a web version, using HTML, CSS, JavaScript, and C#.NET. This experience introduced me to the rigorous banking sector and highlighted the importance of secure and efficient systems.">Em uma grande consultoria com foco em sistemas bancários, contribuí para a migração de um sistema legado para uma versão web, utilizando HTML, CSS, JavaScript e C#.NET. Essa experiência me apresentou ao rigoroso setor bancário e destacou a importância de sistemas seguros e eficientes.</p>
                         </div>
                     </div>
                     
@@ -95,8 +99,8 @@
                         <div class="timeline-content">
                             <h3>Web Developer</h3>
                             <h4>POLLYSOFT Software</h4>
-                            <p class="timeline-date">Maio de 2014 - Agosto de 2014</p>
-                            <p class="description">Em uma fábrica de software especializada em soluções personalizadas, trabalhei no desenvolvimento de uma plataforma de logística usando ActionScript para o frontend e C# .NET para o backend.</p>
+                            <p class="timeline-date" data-pt="Maio de 2014 - Agosto de 2014" data-en="May 2014 - August 2014">Maio de 2014 - Agosto de 2014</p>
+                            <p class="description" data-pt="Em uma fábrica de software especializada em soluções personalizadas, trabalhei no desenvolvimento de uma plataforma de logística usando ActionScript para o frontend e C# .NET para o backend." data-en="At a software factory specializing in customized solutions, I worked on developing a logistics platform using ActionScript for the frontend and C# .NET for the backend.">Em uma fábrica de software especializada em soluções personalizadas, trabalhei no desenvolvimento de uma plataforma de logística usando ActionScript para o frontend e C# .NET para o backend.</p>
                         </div>
                     </div>
                     
@@ -105,8 +109,8 @@
                         <div class="timeline-content">
                             <h3>Web Developer</h3>
                             <h4>EBS Sistemas</h4>
-                            <p class="timeline-date">Janeiro de 2014 - Maio de 2014</p>
-                            <p class="description">Colaborei com a equipe para migrar um sistema contábil legado do Delphi para uma aplicação web moderna usando JavaScript e C#.NET.</p>
+                            <p class="timeline-date" data-pt="Janeiro de 2014 - Maio de 2014" data-en="January 2014 - May 2014">Janeiro de 2014 - Maio de 2014</p>
+                            <p class="description" data-pt="Colaborei com a equipe para migrar um sistema contábil legado do Delphi para uma aplicação web moderna usando JavaScript e C#.NET." data-en="I collaborated with the team to migrate a legacy accounting system from Delphi to a modern web application using JavaScript and C#.NET.">Colaborei com a equipe para migrar um sistema contábil legado do Delphi para uma aplicação web moderna usando JavaScript e C#.NET.</p>
                         </div>
                     </div>
                     
@@ -115,8 +119,8 @@
                         <div class="timeline-content">
                             <h3>Junior Web Developer</h3>
                             <h4>Tray Corp</h4>
-                            <p class="timeline-date">Agosto de 2013 - Dezembro de 2013</p>
-                            <p class="description">Em uma empresa focada em soluções de e-commerce, participei ativamente no desenvolvimento e manutenção da ferramenta de busca, aplicando HTML, CSS, JavaScript e C#.</p>
+                            <p class="timeline-date" data-pt="Agosto de 2013 - Dezembro de 2013" data-en="August 2013 - December 2013">Agosto de 2013 - Dezembro de 2013</p>
+                            <p class="description" data-pt="Em uma empresa focada em soluções de e-commerce, participei ativamente no desenvolvimento e manutenção da ferramenta de busca, aplicando HTML, CSS, JavaScript e C#." data-en="At a company focused on e-commerce solutions, I actively participated in the development and maintenance of the search tool, applying HTML, CSS, JavaScript, and C#.">Em uma empresa focada em soluções de e-commerce, participei ativamente no desenvolvimento e manutenção da ferramenta de busca, aplicando HTML, CSS, JavaScript e C#.</p>
                         </div>
                     </div>
                     
@@ -125,8 +129,8 @@
                         <div class="timeline-content">
                             <h3>Analista de Suporte Técnico</h3>
                             <h4>Wipro Brasil</h4>
-                            <p class="timeline-date">Agosto de 2011 - Dezembro de 2012</p>
-                            <p class="description">Durante meu estágio na área de suporte técnico, tive a oportunidade de adquirir e aplicar conhecimentos práticos em diversas tarefas fundamentais, como formatação, manutenção e instalação de computadores desktop e configuração de impressoras de rede.</p>
+                            <p class="timeline-date" data-pt="Agosto de 2011 - Dezembro de 2012" data-en="August 2011 - December 2012">Agosto de 2011 - Dezembro de 2012</p>
+                            <p class="description" data-pt="Durante meu estágio na área de suporte técnico, tive a oportunidade de adquirir e aplicar conhecimentos práticos em diversas tarefas fundamentais, como formatação, manutenção e instalação de computadores desktop e configuração de impressoras de rede." data-en="During my internship in the technical support area, I had the opportunity to acquire and apply practical knowledge in various fundamental tasks, such as formatting, maintenance, and installation of desktop computers, as well as configuration of network printers.">Durante meu estágio na área de suporte técnico, tive a oportunidade de adquirir e aplicar conhecimentos práticos em diversas tarefas fundamentais, como formatação, manutenção e instalação de computadores desktop e configuração de impressoras de rede.</p>
                         </div>
                     </div>
                     
@@ -135,8 +139,8 @@
                         <div class="timeline-content">
                             <h3>Técnico de Suporte de Sistemas</h3>
                             <h4>Tribunal de Justiça do Estado do Paraná</h4>
-                            <p class="timeline-date">Fevereiro de 2011 - Julho de 2011</p>
-                            <p class="description">Prestei assistência a advogados, juízes, técnicos e analistas judiciais no uso do Sistema de Processo Judicial Eletrônico do Paraná (Projudi).</p>
+                            <p class="timeline-date" data-pt="Fevereiro de 2011 - Julho de 2011" data-en="February 2011 - July 2011">Fevereiro de 2011 - Julho de 2011</p>
+                            <p class="description" data-pt="Prestei assistência a advogados, juízes, técnicos e analistas judiciais no uso do Sistema de Processo Judicial Eletrônico do Paraná (Projudi)." data-en="I provided assistance to lawyers, judges, technicians, and judicial analysts in using the Electronic Judicial Process System of Paraná (Projudi).">Prestei assistência a advogados, juízes, técnicos e analistas judiciais no uso do Sistema de Processo Judicial Eletrônico do Paraná (Projudi).</p>
                         </div>
                     </div>
                 </div>
@@ -145,36 +149,36 @@
 
         <section class="skills section">
             <div class="container">
-                <h2 class="section-title">Habilidades</h2>
+                <h2 class="section-title" data-pt="Habilidades" data-en="Skills">Habilidades</h2>
                 <div class="skills-container">
                     <div class="skill-item">
                         <i class="fas fa-mobile-alt skill-icon"></i>
-                        <div class="skill-name">Aplicações Web e Mobile</div>
+                        <div class="skill-name" data-pt="Aplicações Web e Mobile" data-en="Web and Mobile Applications">Aplicações Web e Mobile</div>
                     </div>
                     
                     <div class="skill-item">
                         <i class="fas fa-brain skill-icon"></i>
-                        <div class="skill-name">Inteligência Artificial</div>
+                        <div class="skill-name" data-pt="Inteligência Artificial" data-en="Artificial Intelligence">Inteligência Artificial</div>
                     </div>
                     
                     <div class="skill-item">
                         <i class="fas fa-sitemap skill-icon"></i>
-                        <div class="skill-name">Arquitetura de Software</div>
+                        <div class="skill-name" data-pt="Arquitetura de Software" data-en="Software Architecture">Arquitetura de Software</div>
                     </div>
                     
                     <div class="skill-item">
                         <i class="fas fa-cloud skill-icon"></i>
-                        <div class="skill-name">Infraestrutura em Nuvem</div>
+                        <div class="skill-name" data-pt="Infraestrutura em Nuvem" data-en="Cloud Infrastructure">Infraestrutura em Nuvem</div>
                     </div>
                     
                     <div class="skill-item">
                         <i class="fas fa-check-double skill-icon"></i>
-                        <div class="skill-name">Testes e Qualidade de Software</div>
+                        <div class="skill-name" data-pt="Testes e Qualidade de Software" data-en="Testing and Software Quality">Testes e Qualidade de Software</div>
                     </div>
                     
                     <div class="skill-item">
                         <i class="fas fa-network-wired skill-icon"></i>
-                        <div class="skill-name">Integração e Microsserviços</div>
+                        <div class="skill-name" data-pt="Integração e Microsserviços" data-en="Integration and Microservices">Integração e Microsserviços</div>
                     </div>
                 </div>
             </div>
@@ -182,30 +186,30 @@
         
         <section class="education section">
             <div class="container">
-                <h2 class="section-title">Formação</h2>
+                <h2 class="section-title" data-pt="Formação" data-en="Education">Formação</h2>
                 <div class="education-list">
                     <div class="education-item">
-                        <h3>Pós-graduação - Especialização, Arquitetura de Software</h3>
+                        <h3 data-pt="Pós-graduação - Especialização, Arquitetura de Software" data-en="Postgraduate - Specialization, Software Architecture">Pós-graduação - Especialização, Arquitetura de Software</h3>
                         <h4>FIAP</h4>
-                        <p class="timeline-date">Março de 2023 - Março de 2024</p>
+                        <p class="timeline-date" data-pt="Março de 2023 - Março de 2024" data-en="March 2023 - March 2024">Março de 2023 - Março de 2024</p>
                     </div>
                     
                     <div class="education-item">
-                        <h3>Ensino Superior, Análise e Desenvolvimento de Sistemas</h3>
+                        <h3 data-pt="Ensino Superior, Análise e Desenvolvimento de Sistemas" data-en="Higher Education, Analysis and Systems Development">Ensino Superior, Análise e Desenvolvimento de Sistemas</h3>
                         <h4>Universidade Positivo</h4>
-                        <p class="timeline-date">Janeiro de 2019 - Junho de 2022</p>
+                        <p class="timeline-date" data-pt="Janeiro de 2019 - Junho de 2022" data-en="January 2019 - June 2022">Janeiro de 2019 - Junho de 2022</p>
                     </div>
                     
                     <div class="education-item">
-                        <h3>Educação Técnica, Brazil Educational Program for iOS Development - BEPiD</h3>
+                        <h3 data-pt="Educação Técnica, Brazil Educational Program for iOS Development - BEPiD" data-en="Technical Education, Brazil Educational Program for iOS Development - BEPiD">Educação Técnica, Brazil Educational Program for iOS Development - BEPiD</h3>
                         <h4>Pontifícia Universidade Católica do Paraná</h4>
-                        <p class="timeline-date">2015 - 2015</p>
+                        <p class="timeline-date" data-pt="2015 - 2015" data-en="2015 - 2015">2015 - 2015</p>
                     </div>
                     
                     <div class="education-item">
-                        <h3>Educação Técnica, Computação</h3>
+                        <h3 data-pt="Educação Técnica, Computação" data-en="Technical Education, Computing">Educação Técnica, Computação</h3>
                         <h4>Faculdade de Tecnologia Opet</h4>
-                        <p class="timeline-date">2007 - 2009</p>
+                        <p class="timeline-date" data-pt="2007 - 2009" data-en="2007 - 2009">2007 - 2009</p>
                     </div>
                 </div>
             </div>
@@ -213,7 +217,7 @@
         
         <section class="contact section">
             <div class="container">
-                <h2 class="section-title">Contato</h2>
+                <h2 class="section-title" data-pt="Contato" data-en="Contact">Contato</h2>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -238,7 +242,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Felipe Antero. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Felipe Antero. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
         </div>
     </footer>
 

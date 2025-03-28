@@ -27,6 +27,39 @@ body {
     padding: 0 2rem;
 }
 
+/* Language Toggle */
+.language-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.lang-btn {
+    background-color: transparent;
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
+    padding: 0.3rem 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-left: 0.5rem;
+    border-radius: 4px;
+}
+
+.lang-btn.active {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+.lang-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active:hover {
+    background-color: var(--light-color);
+}
+
 /* Header e Card de Perfil */
 .header {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
