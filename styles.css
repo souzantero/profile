@@ -136,6 +136,10 @@ body {
     background-color: #0077B5;
 }
 
+.github:hover {
+    background-color: var(--dark-color);
+}
+
 /* Seções */
 .section {
     padding: 4rem 0;
